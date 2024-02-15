@@ -1,0 +1,9 @@
+<resources>
+    <string name="kalkulator">Spinner</string>
+    <string-array name="operations">
+        <item>Tambah</item>
+        <item>Kurang</item>
+        <item>Kali</item>
+        <item>Bagi</item>
+    </string-array>
+</resources>

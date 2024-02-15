@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#9FB2C1">
+
+    <ImageView
+        android:id="@+id/Icon"
+        android:layout_width="144dp"
+        android:layout_height="204dp"
+        android:src="@drawable/cal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/Icon"
+        android:text="Baby Calculator"
+        android:layout_marginTop="-29dp"
+        android:textAlignment="center"
+        android:textSize="24dp"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/white"
+        />
+
+    <EditText
+        android:id="@+id/Input1"
+        android:layout_width="320dp"
+        android:layout_height="25dp"
+        android:inputType="number"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/textbox"
+        android:hint="Angka 1"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Icon"
+        android:textAlignment="center"
+        />
+
+    <EditText
+        android:id="@+id/Input2"
+        android:layout_width="320dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:inputType="number"
+        android:background="@drawable/textbox"
+        android:hint="Angka 2"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Input1"
+        />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="@drawable/textbox"
+        android:entries="@array/operations"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Input2"
+        />
+
+    <Button
+        android:id="@+id/Jumlah"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/textbox"
+        android:text="Jumlahkan"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spinner"
+        tools:ignore="MissingConstraints"
+        />
+
+    <TextView
+        android:id="@+id/tvHasil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Hasil"
+        android:textSize="45dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Jumlah"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
